@@ -1,0 +1,20 @@
+#navbar-content{
+  height: 60px;
+  padding: 0 24px;
+  background: #2B7FC3;
+  border-top: 4px solid #1D5C8F;
+  color: #c9e2f1;
+  border-bottom: 2px solid #D7D5D4;
+  text-decoration: none;
+}
+
+#navbar-links a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0 10px;
+  border-left: solid 1px #c9e2f1;
+}
+
+#navbar-links a:first-child{
+  border-left: none;
+}

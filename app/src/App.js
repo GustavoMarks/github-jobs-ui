@@ -9,6 +9,8 @@ import AllJobs from './pages/AllJobs';
 import HowItWorks from './pages/HowItWorks';
 import NotFound from './pages/NotFound';
 
+import './app.css';
+
 function App() {
   return (
     <BrowserRouter>
