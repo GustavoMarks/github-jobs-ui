@@ -1,62 +1,84 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import Twitter from '../../assets/twitter.svg'
+import FeedIcon from '../../assets/Feed-icon.svg';
+import Email from '../../assets/email.svg';
+
+import './style.css';
 
 export default function Home() {
   return (
-    <div className="container" style={{ marginBottom: '80px' }}>
-      <header>
-        <h1> Find the job you want </h1>
+    <>
+      <header className='jumbotron'>
+        <div id='jumbotron-container' className='container' >
+          <h1> FIND THE JOB YOU WANT </h1>
+          <p> GitHub Jobs is a great place to find open positions at software development companies for your technical talents. </p>
+          <hr className="my-4" />
+          <strong> Stay updated! </strong>
+
+          <nav id='header-nav' className='nav'>
+            <Link to='https://twitter.com/GitHubJobs'> <img src={Twitter} height="22px" alt='twitter icon'/> Twitter </Link>
+            <Link to='/#'> <img src={FeedIcon} height="22px" alt='Feed icon'/> Atom Feed </Link>
+            <Link to='/#'> <img src={Email} height="22px" alt='Email icon'/> Subscribe email </Link>
+
+          </nav>
+
+        </div>
       </header>
 
-      <form>
-        <label> Job Description </label>
-        <input type='text' placeholder='Filter by name, benefits, companies, expertise'/>
+      <div className="container" style={{ marginBottom: '80px' }}>
+        <form>
+          <label> Job Description </label>
+          <input type='text' placeholder='Filter by name, benefits, companies, expertise' />
 
-        <label> Location </label>
-        <input type='text' placeholder='Filter by city, state, code or country'/>
+          <label> Location </label>
+          <input type='text' placeholder='Filter by city, state, code or country' />
 
-        <input type="checkbox"/>
-        <label> Full Time Only </label>
+          <input type="checkbox" />
+          <label> Full Time Only </label>
 
-        <button type='submit'> Search </button>
+          <button type='submit'> Search </button>
 
-      </form>
+        </form>
 
-      <section>
-        <h2> Featured Jobs </h2>
-        <ul>
-          <li> Java Software Developer</li>
-          <li> Full Stack Developer </li>
-        </ul>
+        <section>
+          <h2> Featured Jobs </h2>
+          <ul>
+            <li> Java Software Developer</li>
+            <li> Full Stack Developer </li>
+          </ul>
 
-        <button> More Awesome Jobs &rarr;</button>
+          <button> More Awesome Jobs &rarr;</button>
 
-        <h2> Hot Searches </h2>
-        <ul>
-          <li> PHP </li> 
-          <li> Rails </li> 
-          <li> Python </li> 
-          <li> Java Script </li> 
-          <li> Scala </li> 
-          <li> Android </li> 
-          <li> iOS </li>
-          <li> Linux </li>
-          <li> Erlang </li>
-          <li> San Francisco </li>
-          <li> New York City </li>
-          <li> Austin, Tx </li>
-          <li> London </li>
-          <li> Europe </li>
-        </ul>
+          <h2> Hot Searches </h2>
+          <ul>
+            <li> PHP </li>
+            <li> Rails </li>
+            <li> Python </li>
+            <li> Java Script </li>
+            <li> Scala </li>
+            <li> Android </li>
+            <li> iOS </li>
+            <li> Linux </li>
+            <li> Erlang </li>
+            <li> San Francisco </li>
+            <li> New York City </li>
+            <li> Austin, Tx </li>
+            <li> London </li>
+            <li> Europe </li>
+          </ul>
 
-        <aside>
-          <span> Folow GitHub Jobs on Twitter </span>
-          <div>
-            <span> Featured Company </span>
-            <img src="#" alt="Company" /> 
-            <span> 2 Jobs on Company </span>
-          </div>
-        </aside>
-      </section>
-    </div>
+          <aside>
+            <span> Folow GitHub Jobs on Twitter </span>
+            <div>
+              <span> Featured Company </span>
+              <img src="#" alt="Company" />
+              <span> 2 Jobs on Company </span>
+            </div>
+          </aside>
+        </section>
+      </div>
+    </>
   )
 }
