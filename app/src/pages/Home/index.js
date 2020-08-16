@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import SearchForm from '../../components/SearchForm';
+import FancySheet from '../../components/FancySheet';
 
 import Twitter from '../../assets/twitter.svg'
 import FeedIcon from '../../assets/Feed-icon.svg';
@@ -20,9 +21,9 @@ export default function Home() {
           <strong> Stay updated! </strong>
 
           <nav id='header-nav' className='nav'>
-            <Link to='https://twitter.com/GitHubJobs'> <img src={Twitter} height="22px" alt='twitter icon'/> Twitter </Link>
-            <Link to='/#'> <img src={FeedIcon} height="22px" alt='Feed icon'/> Atom Feed </Link>
-            <Link to='/#'> <img src={Email} height="22px" alt='Email icon'/> Subscribe email </Link>
+            <Link to='https://twitter.com/GitHubJobs'> <img src={Twitter} height="22px" alt='twitter icon' /> Twitter </Link>
+            <Link to='/#'> <img src={FeedIcon} height="22px" alt='Feed icon' /> Atom Feed </Link>
+            <Link to='/#'> <img src={Email} height="22px" alt='Email icon' /> Subscribe email </Link>
 
           </nav>
 
@@ -30,45 +31,47 @@ export default function Home() {
       </header>
 
       <div className="container" style={{ marginBottom: '80px' }}>
-        
-        <SearchForm/>
 
-        <section>
-          <h2> Featured Jobs </h2>
-          <ul>
-            <li> Java Software Developer</li>
-            <li> Full Stack Developer </li>
-          </ul>
+        <SearchForm />
 
-          <button> More Awesome Jobs &rarr;</button>
+        <FancySheet>
+          <section>
+            <h2> Featured Jobs </h2>
+            <ul>
+              <li> Java Software Developer</li>
+              <li> Full Stack Developer </li>
+            </ul>
 
-          <h2> Hot Searches </h2>
-          <ul>
-            <li> PHP </li>
-            <li> Rails </li>
-            <li> Python </li>
-            <li> Java Script </li>
-            <li> Scala </li>
-            <li> Android </li>
-            <li> iOS </li>
-            <li> Linux </li>
-            <li> Erlang </li>
-            <li> San Francisco </li>
-            <li> New York City </li>
-            <li> Austin, Tx </li>
-            <li> London </li>
-            <li> Europe </li>
-          </ul>
+            <button> More Awesome Jobs &rarr;</button>
 
-          <aside>
-            <span> Folow GitHub Jobs on Twitter </span>
-            <div>
-              <span> Featured Company </span>
-              <img src="#" alt="Company" />
-              <span> 2 Jobs on Company </span>
-            </div>
-          </aside>
-        </section>
+            <h2> Hot Searches </h2>
+            <ul>
+              <li> PHP </li>
+              <li> Rails </li>
+              <li> Python </li>
+              <li> Java Script </li>
+              <li> Scala </li>
+              <li> Android </li>
+              <li> iOS </li>
+              <li> Linux </li>
+              <li> Erlang </li>
+              <li> San Francisco </li>
+              <li> New York City </li>
+              <li> Austin, Tx </li>
+              <li> London </li>
+              <li> Europe </li>
+            </ul>
+
+            <aside>
+              <span> Folow GitHub Jobs on Twitter </span>
+              <div>
+                <span> Featured Company </span>
+                <img src="#" alt="Company" />
+                <span> 2 Jobs on Company </span>
+              </div>
+            </aside>
+          </section>
+        </FancySheet>
       </div>
     </>
   )
