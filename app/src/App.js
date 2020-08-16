@@ -14,18 +14,18 @@ import './app.css';
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ minHeight: '100vh'}}>
-      <Navbar/>
+      <div id='view-content'>
+        <Navbar />
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/jobs" component={AllJobs} />
-        <Route exact path="/faq" component={HowItWorks} />
-        <Route component={NotFound} />
-      </Switch>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/jobs" component={AllJobs} />
+          <Route exact path="/faq" component={HowItWorks} />
+          <Route component={NotFound} />
+        </Switch>
       </div>
 
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 }
