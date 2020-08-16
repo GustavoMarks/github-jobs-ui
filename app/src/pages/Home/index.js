@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import SearchForm from '../../components/SearchForm';
+
 import Twitter from '../../assets/twitter.svg'
 import FeedIcon from '../../assets/Feed-icon.svg';
 import Email from '../../assets/email.svg';
@@ -28,19 +30,8 @@ export default function Home() {
       </header>
 
       <div className="container" style={{ marginBottom: '80px' }}>
-        <form>
-          <label> Job Description </label>
-          <input type='text' placeholder='Filter by name, benefits, companies, expertise' />
-
-          <label> Location </label>
-          <input type='text' placeholder='Filter by city, state, code or country' />
-
-          <input type="checkbox" />
-          <label> Full Time Only </label>
-
-          <button type='submit'> Search </button>
-
-        </form>
+        
+        <SearchForm/>
 
         <section>
           <h2> Featured Jobs </h2>
