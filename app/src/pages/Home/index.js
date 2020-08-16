@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div>
+    <div className="container" style={{ marginBottom: '80px' }} >
       <header>
         <h1> Find the job you want </h1>
       </header>

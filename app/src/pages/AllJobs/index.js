@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function Home(){
-  return <h1> Alljobs </h1>
+export default function Home() {
+  return (
+    <div className='container'><h1> All Jobs </h1></div>
+  )
 }

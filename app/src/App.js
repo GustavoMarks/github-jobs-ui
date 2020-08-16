@@ -14,6 +14,7 @@ import './app.css';
 function App() {
   return (
     <BrowserRouter>
+      <div style={{ minHeight: '100vh'}}>
       <Navbar/>
 
       <Switch>
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/faq" component={HowItWorks} />
         <Route component={NotFound} />
       </Switch>
+      </div>
 
       <Footer/>
     </BrowserRouter>
