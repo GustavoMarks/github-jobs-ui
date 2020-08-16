@@ -13,8 +13,33 @@
   font-weight: bold;
   padding: 0 10px;
   border-left: solid 1px #c9e2f1;
+  outline: none;
 }
 
 #navbar-links a:first-child{
   border-left: none;
+}
+
+#collapse-btn {
+  display: none;
+}
+
+
+@media (max-width: 496px){
+  #navbar-content {
+    height: auto;
+    min-height: 60px;
+  }
+  
+  #navbar-links {
+    display: none;
+    transition: all 0.2s;
+  }
+
+  #collapse-btn {
+    display: block;
+    background: none;
+    padding: 10px;
+    border: 2px solid #D7D5D4;
+  }
 }
