@@ -22,4 +22,10 @@
   border-bottom: 1px solid #ccc;
   min-height: 80px;
   margin-top: 20px;
+  padding: 4px;
+}
+
+#job-list li:hover {
+  background: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
 }

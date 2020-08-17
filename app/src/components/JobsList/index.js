@@ -16,7 +16,7 @@ export default function JobsList({ list }) {
 
             <div class='job-item-row'>
               <p> {job.company} - <strong> {job.type}</strong> </p>
-              <span> {new Date(job.crated_at).toLocaleDateString()} </span>
+              <span> {new Date(job.created_at).toLocaleDateString()} </span>
             </div>
           </li>
         })
