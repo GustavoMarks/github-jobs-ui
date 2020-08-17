@@ -9,12 +9,12 @@ export default function JobsList({ list }) {
       {
         list.map(job => {
           return <li key={job.id}>
-            <div class='job-item-row'>
+            <div className='job-item-row'>
               <h4> <Link to="/#"> {job.title} </Link>  </h4>
               <span> {job.location} </span>
             </div>
 
-            <div class='job-item-row'>
+            <div className='job-item-row'>
               <p> {job.company} - <strong> {job.type}</strong> </p>
               <span> {new Date(job.created_at).toLocaleDateString()} </span>
             </div>
