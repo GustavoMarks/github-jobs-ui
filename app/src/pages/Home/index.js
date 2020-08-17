@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import SearchForm from '../../components/SearchForm';
 import FancySheet from '../../components/FancySheet';
+import JobList from '../../components/JobsList';
 
 import Twitter from '../../assets/twitter.svg'
 import FeedIcon from '../../assets/Feed-icon.svg';
@@ -36,11 +37,10 @@ export default function Home() {
 
         <FancySheet>
           <section>
-            <h2> Featured Jobs </h2>
-            <ul>
-              <li> Java Software Developer</li>
-              <li> Full Stack Developer </li>
-            </ul>
+            <h2 id="section-title"> Featured Jobs </h2>
+            <hr/>
+
+            <JobList list={tempData}/>            
 
             <button> More Awesome Jobs &rarr;</button>
 
@@ -76,3 +76,20 @@ export default function Home() {
     </>
   )
 }
+
+const tempData = [{
+  id: 1,
+  title: 'Senior Python Engenieer',
+  location: 'Austion, TX/ Romote',
+  crated_at: 'Fri Aug 14 18:50:13 UTC 2020',
+  company: 'StepRock, Inc',
+  type: 'Full time'
+},
+{
+  id: 1,
+  title: 'Senior Python Engenieer',
+  location: 'Austion, TX/ Romote',
+  crated_at: 'Fri Aug 14 18:50:13 UTC 2020',
+  company: 'StepRock, Inc',
+  type: 'Full time'
+}]

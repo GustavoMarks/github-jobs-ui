@@ -1,0 +1,25 @@
+.job-item-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #999;
+  flex-wrap: wrap;
+}
+
+.job-item-row strong {
+  color: #1d9a00;
+}
+
+.job-item-row h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#job-list li {
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+  min-height: 80px;
+  margin-top: 20px;
+}
