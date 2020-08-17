@@ -37,39 +37,33 @@ export default function Home() {
 
         <FancySheet>
           <section>
-            <h2 id="section-title"> Featured Jobs </h2>
-            <hr/>
+            <h3 className="section-title"> Featured Jobs </h3>
+            <hr />
 
-            <JobList list={tempData}/>            
+            <JobList list={tempData} />
 
-            <button> More Awesome Jobs &rarr;</button>
+            <Link id='more-jobs' to='/jobs'> More Awesome Jobs &rarr;</Link>
+            <hr />
+            <br />
 
-            <h2> Hot Searches </h2>
-            <ul>
-              <li> PHP </li>
-              <li> Rails </li>
-              <li> Python </li>
-              <li> Java Script </li>
-              <li> Scala </li>
-              <li> Android </li>
-              <li> iOS </li>
-              <li> Linux </li>
-              <li> Erlang </li>
-              <li> San Francisco </li>
-              <li> New York City </li>
-              <li> Austin, Tx </li>
-              <li> London </li>
-              <li> Europe </li>
+            <h3 className="section-title"> Hot Searches </h3>
+            <ul id='hot-searches-list'>
+              <li> <Link to='/#'>PHP</Link>  </li>
+              <li> <Link to='/#'>Rails</Link>  </li>
+              <li> <Link to='/#'>Python</Link>  </li>
+              <li> <Link to='/#'>Java Script</Link> </li>
+              <li> <Link to='/#'>Scala</Link> </li>
+              <li> <Link to='/#'>Android</Link> </li>
+              <li> <Link to='/#'>iOS</Link>  </li>
+              <li> <Link to='/#'>Linux</Link> </li>
+              <li> <Link to='/#'>Erlang </Link> </li>
+              <li> <Link to='/#'>San Francisco</Link>  </li>
+              <li> <Link to='/#'>New York City</Link>  </li>
+              <li> <Link to='/#'>Austin, Tx</Link>  </li>
+              <li> <Link to='/#'>London</Link>  </li>
+              <li> <Link to='/#'>Europe</Link>  </li>
             </ul>
 
-            <aside>
-              <span> Folow GitHub Jobs on Twitter </span>
-              <div>
-                <span> Featured Company </span>
-                <img src="#" alt="Company" />
-                <span> 2 Jobs on Company </span>
-              </div>
-            </aside>
           </section>
         </FancySheet>
       </div>
@@ -83,7 +77,7 @@ const tempData = [{
   location: 'Austion, TX/ Romote',
   crated_at: 'Fri Aug 14 18:50:13 UTC 2020',
   company: 'StepRock, Inc',
-  type: 'Full time'
+  type: 'Full Time'
 },
 {
   id: 1,
@@ -91,5 +85,5 @@ const tempData = [{
   location: 'Austion, TX/ Romote',
   crated_at: 'Fri Aug 14 18:50:13 UTC 2020',
   company: 'StepRock, Inc',
-  type: 'Full time'
+  type: 'Full Time'
 }]

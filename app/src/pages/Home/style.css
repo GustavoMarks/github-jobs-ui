@@ -33,6 +33,36 @@
   margin-left: 0;
 }
 
+.section-title{
+  font-weight: bold;
+}
+
+#more-jobs {
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+#hot-searches-list {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+#hot-searches-list li {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #2B7FC3;
+  text-decoration: underline;
+}
+
+#hot-searches-list li:first-child {
+  list-style-type: none;
+  margin-left: 0;
+}
+
 @media (max-width: 768px){
   #jumbotron-container {
     text-align: center;
@@ -48,6 +78,3 @@
 
 }
 
-#section-title{
-  font-weight: bold;
-}
